@@ -1,0 +1,44 @@
+# Django and its dependencies
+Django==4.2.3
+asgiref==3.7.2
+sqlparse==0.4.4
+
+# For handling environment variables
+python-dotenv==1.0.0
+
+# For improved database support (optional, but recommended)
+#psycopg2-binary==2.9.6
+
+# For handling money and currency
+django-money==3.1.0
+
+# For creating REST APIs (if needed)
+djangorestframework==3.14.0
+
+# For handling cross-origin resource sharing (if needed)
+django-cors-headers==4.2.0
+
+# For user authentication and registration
+django-allauth==0.54.0
+
+# For generating PDF reports
+reportlab==3.6.13
+
+# For handling file uploads (if needed)
+#Pillow==10.0.0
+
+# For task queuing and background jobs (if needed)
+celery==5.3.1
+
+# For better date and time handling
+python-dateutil==2.8.2
+
+# For data visualization (if needed)
+matplotlib==3.7.2
+
+# For data manipulation and analysis (if needed)
+#pandas==2.0.3
+
+# For testing
+pytest==7.4.0
+pytest-django==4.5.2
