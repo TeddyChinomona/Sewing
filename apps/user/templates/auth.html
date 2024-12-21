@@ -85,7 +85,7 @@
             const passDetail = document.getElementById('pass').value;
             data ={
                 password: passDetail,
-                username: userDetail
+                username: userDetail,
             }
             console.log(data)
             fetch("{% url 'user:login_view' %}", {
@@ -97,13 +97,14 @@
                 body: JSON.stringify(data),
             }).then(answer => answer.json())
             .then(data =>{
-                console.log(data)
                 if(data.success){
-                    console.log('yes')
-                }else{
-                    console.log('no')
+                    console.log(data.success)
+                }
+                else{
+                    console.log(data.success)
                 }
             });
+
         })
     </script>
 

@@ -10,14 +10,14 @@ def LogInView(request):
         return render(request, 'auth.html')
     if request.method == 'POST':
         data = json.loads(request.body)
-        email = data.get('username')
+        username = data.get('username')
         password = data.get('password')
 
-        user = authenticate(request, username = email, password = password)
+        user = authenticate(request, username = username, password = password)
 
         if user is not None:
             login(request, user)
-            return redirect('dashboard:home')
+            return JsonResponse({'success': True},status = 200)
         else:
             return JsonResponse({'success': False},status = 400)
 
